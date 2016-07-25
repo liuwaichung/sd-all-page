@@ -10,126 +10,190 @@
   <body>
     <a-scene>
         <a-entity camera look-controls="enabled: true" wasd-controls="enabled: false">
-             <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 500; timeout: 1000"></a-entity>
+             <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 10000; timeout: 1000"></a-entity>
              
            
         </a-entity>
         
         
-        <a-sky id="pano" src="360photo/business.jpg" rotation="0 -60 0" radius="5000" color="#fff"></a-sky>
+        <a-sky id="sky" src="360photo/business.jpg" rotation="0 -60 0" radius="5000" color="#fff"></a-sky>
+        
+        <a-image id="business" height="40" width="100" src="button2/business-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
+            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
        
-       
-        <a-image id="downtown" height="12" width="56" src="button/downtown-button.png" position="270 -20 -200" rotation="0 -30 0" opacity="0.5" visible="true">
+        <a-image id="technology" height="40" width="100" src="button2/technology-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="true">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="washley" height="12" width="56" src="button/washley-button.png" position="250 -20 -250" rotation="0 -30 0" opacity="0.5" visible="true">
+        <a-image id="artcollege" height="200" width="600" src="button2/artcollege-button.png" position="-2200 -20 500" rotation="0 90 0" opacity="2" visible="true">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="disland" height="12" width="56" src="button/disland-button.png" position="60 -20 200" rotation="0 200 0" opacity="0.5" visible="true">
+        
+        <a-image id="park" height="200" width="600" src="button2/park-button.png" position="-200 90 1600" rotation="0 180 0" opacity="2" visible="true">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="library" height="40" width="80" src="button/library-button.png" position="-150 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="red27" height="20" width="60" src="button2/red27-button.png" position="-2200 -20 500" rotation="0 90 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="english" height="40" width="80" src="button/english-button.png" position="-50 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="library" height="40" width="80" src="button/library-button.png" position="-150 70 200" rotation="0 200 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="ground" height="40" width="80" src="button/ground-button.png" position="-10 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="english" height="40" width="80" src="button/english-button.png" position="-50 70 200" rotation="0 200 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="h" height="40" width="80" src="button/h-button.png" position="-10 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="ground" height="40" width="80" src="button/ground-button.png" position="-10 70 200" rotation="0 200 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="park" height="40" width="80" src="button/park-button.png" position="20 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="h" height="40" width="80" src="button/h-button.png" position="-10 70 200" rotation="0 200 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="science" height="40" width="80" src="button/science-button.png" position="40 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="park" height="40" width="80" src="button/park-button.png" position="20 70 200" rotation="0 200 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="sg" height="40" width="80" src="button/sg-button.png" position="80 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="science" height="40" width="80" src="button2/science-button.png" position="40 70 200" rotation="0 200 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
-        <a-image id="swimming" height="40" width="80" src="button/swimming-button.png" position="80 70 200" rotation="0 200 0" opacity="0.5" visible="true">
+        <a-image id="sg" height="40" width="80" src="button2/5tiger-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseleave opacity="0.5"></a-mouseleave>
+        </a-image>
+        
+        <a-image id="swimming" height="40" width="80" src="button/swimming-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
             <a-mouseenter opacity="1"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
     
-        
-        
-        
+    <a-image id="v" height="40" width="80" src="button2/v-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="ture">
+        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
+    <a-image id="ad" height="40" width="80" src="button2/ad-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
+    <a-image id="light" height="40" width="80" src="button2/light-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
+    <a-image id="swimming" height="40" width="80" src="button2/swimming-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
+        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+    </a-image>
+    
     </a-scene>
   </body>
   
   <script>
-      var sky = document.querySelector('#pano');
+      var sky = document.querySelector('#sky');
       
+      var business= document.querySelector('#business');
       var disland = document.querySelector('#disland');
-      var downtown = document.querySelector('#downtown');
-      var washley = document.querySelector('#washley');
+      var technology = document.querySelector('#technology');
+      var artcollege = document.querySelector('#artcollege');
+      var park = document.querySelector('#park');
+      var red27 = document.querySelector('#red27');
+      var ad = document.querySelector('#ad');
+      var light = document.querySelector('#light')
+      
       var library = document.querySelector('#library');
       var english = document.querySelector('#english');
       var ground = document.querySelector('#ground');
       var h = document.querySelector('#h');
-      var park = document.querySelector('#park');
       var science = document.querySelector('#science');
       var sg = document.querySelector('#sg');
       var swimming = document.querySelector('#swimming');
+      var v = document.querySelector('#v');
       
       
       
-                                                   document.querySelector('#downtown').addEventListener('click', function one() {
+                                                   document.querySelector('#technology').addEventListener('click', function() {
                                                            sky.setAttribute('src', '360photo/technology.jpg');
                                                            this.setAttribute('visible', 'false');
                                                            
-                                                           washley.setAttribute('visible', 'true');
-                                                           washley.setAttribute('position', '180 -20 -200');
-                                                           washley.setAttribute('rotation', '0 -40 0');
+                                                           library.setAttribute('visible', 'true');
+                                                           library.setAttribute('position', '180 -20 -200');
+                                                           library.setAttribute('rotation', '0 -40 0');
                                                            
-                                                           disland.setAttribute('visible', 'true');
-                                                           disland.setAttribute('position', '-20 -20 200');
-                                                           disland.setAttribute('rotation', '0 180 0');
+                                                           artcollege.setAttribute('visible', 'true');
+                                                           artcollege.setAttribute('position', '-20 -20 200');
+                                                           artcollege.setAttribute('rotation', '0 180 0');
                                                            });
                                                            
                                                      
                                                            
-                                                    document.querySelector('#washley').addEventListener('click', function two() {
-                                                    one();
+                                                    document.querySelector('#artcollege').addEventListener('click', function() {
+                                                  
                                                     sky.setAttribute('src', '360photo/artcollege.jpg');
                                                     this.setAttribute('visible', 'false');
                                                                                                                
-                                                    downtown.setAttribute('visible', 'true');
-                                                    downtown.setAttribute('position', '-280 -20 40');
-                                                    downtown.setAttribute('rotation', '0 100 0');
-                                     
-                                                    disland.setAttribute('visible', 'true');
-                                                    disland.setAttribute('position', '-20 -20 200');
-                                                    disland.setAttribute('rotation', '0 180 0');
+                                                           park.setAttribute('visible', 'false');
+                                                           artcollege.setAttribute('visible', 'false');
+                                                           technology.setAttribute('visible', 'false');
+                                                                                                           
+                                                           business.setAttribute('visible', 'true');
+                                                           business.setAttribute('position', '-4100 280 700');
+                                                           business.setAttribute('rotation', '0 100 0');
+                                                           business.setAttribute('scale', '10 10 10');
+                                                                                                           
+                                                           red27.setAttribute('visible', 'true');
+                                                           red27.setAttribute('position', '1000 -20 -100');
+                                                           red27.setAttribute('rotation', '0 -100 0');
+                                                           red27.setAttribute('scale', '4.5 4.5 4.5');
+                                                           
+                                                                                                           
+                                                                                                           
+                                                    });
+                                                    
+                                                    document.querySelector('#red27').addEventListener('click', function() {
+                                                            
+                                                           artcollege.setAttribute('visible', 'false');
+                                                           sg.setAttribute('visible', 'false');
+                                                                                                      
+                                                           sky.setAttribute('src', '360photo/red.jpg');
+                                                           this.setAttribute('visible', 'false');
+                                                           business.setAttribute('visible', 'false');
+                                                           red27.setAttribute('visible', 'false');
+                                                                                                      
+                                                           artcollege.setAttribute('visible', 'true');
+                                                           artcollege.setAttribute('position', '370 70 500');
+                                                           artcollege.setAttribute('rotation', '0 220 0');
+                                                           artcollege.setAttribute('scale', '0.3 0.3 0.3');
+                                                                                                           
+                                                           sg.setAttribute('visible', 'true');  //photo setting promble
+                                                           sg.setAttribute('position', '-200 60 100');
+                                                           sg.setAttribute('rotation', '0 120 0');
+                                                           sg.setAttribute('scale', '0.7 0.7 0.7');
+                                                           sg.setAttribute('opacity','2');
                                                     });
                                                     
                                                     
-                                                    document.querySelector('#disland').addEventListener('click', function three() {
-                                                    two();
-                                                    sky.setAttribute('src', '360photo/english.jpg');
+                                                    document.querySelector('#park').addEventListener('click', function() {
+                                                    
+                                                    sky.setAttribute('src', '360photo/park.jpg');
                                                     this.setAttribute('visible', 'false');
                                                                                                                                                                    
                                                         washley.setAttribute('visible', 'true');
@@ -137,12 +201,70 @@
                                                         washley.setAttribute('rotation', '0 -40 0');
                                                                                                                                                                    
                                                         downtown.setAttribute('visible', 'true');
-                                                        downtown.setAttribute('position', '-40 -20 -200');
+                                                        downtown.setAttribute('position', '1800 -20 -200');
                                                         downtown.setAttribute('rotation', '0 10 0');
                                                         });
                                                         
+                                                     document.querySelector('#sg').addEventListener('click', function() {
+                                                        sky.setAttribute('src', '360photo/sg.jpg');
+                                                        this.setAttribute('visible', 'false');
+                                                                                                    
+                                                        artcollege.setAttribute('visible', 'false');
+                                                        red27.setAttribute('visible', 'false');
+                                                                                                    
+                                                                                                    
+                                                        red27.setAttribute('visible', 'true');
+                                                        red27.setAttribute('position', '100 -20 -200');
+                                                        red27.setAttribute('rotation', '0 -40 0');
+                                                        red27.setAttribute('scale', '2 2 2');
+                                                                                                    
+                                                        v.setAttribute('visible', 'true');
+                                                        v.setAttribute('position', '-20 20 200');
+                                                        v.setAttribute('rotation', '0 180 0');
+                                                        v.setAttribute('opacity','2');
+                                                        v.setAttribute('scale', '0.7 0.7 0.7');
+                                                                                                    
+                                                        science.setAttribute('visible', 'true');
+                                                        science.setAttribute('position', '-200 0 50');
+                                                        science.setAttribute('rotation', '0 90 0');
+                                                        science.setAttribute('opacity','2');
+                                                        science.setAttribute('scale', '0.7 0.7 0.7');
+                                                                                                    
+                                                        });
+                                                        
+                                                        document.querySelector('#v').addEventListener('click', function() {
+                                                        sky.setAttribute('src', '360photo/v.jpg');
+                                                        this.setAttribute('visible', 'false');
+                                                                                                      
+                                                        artcollege.setAttribute('visible', 'false');
+                                                        red27.setAttribute('visible', 'false');
+                                                        technology.setAttribute('visible', 'false');
+                                                        business.setAttribute('visible', 'false');
+                                                                                                      
+                                                                                                      
+                                                        park.setAttribute('visible', 'true');
+                                                      
+                                                                                                    
+                                                        sg.setAttribute('visible', 'true');
+                                                        sg.setAttribute('position', '500 -20 200');
+                                                        sg.setAttribute('rotation', '0 180 0');
+                                                        sg.setAttribute('opacity','2');
+                                                                                                      
+                                                        ad.setAttribute('visible', 'true');
+                                                        ad.setAttribute('position', '-200 -20 200');
+                                                        ad.setAttribute('rotation', '0 180 0');
+                                                        ad.setAttribute('opacity','2');
+                                                                                                      
+                                                        light.setAttribute('visible', 'true');
+                                                        light.setAttribute('position', '200 -20 200');
+                                                        light.setAttribute('rotation', '0 180 0');
+                                                        light.setAttribute('opacity','2');
+                                                        
+                                                                                                      
+                                                        });
+                                                        
                                                         document.querySelector('#library').addEventListener('click', function() {
-                                                                                                            three();
+                                                                                                           
                                                                         sky.setAttribute('src', '360photo/library.jpg');
                                                                             this.setAttribute('visible', 'false');
                                                                                                              
@@ -210,31 +332,20 @@
                                                     document.querySelector('#science').addEventListener('click', function() {
                                                     sky.setAttribute('src', '360photo/science.jpg');
                                                     this.setAttribute('visible', 'false');
+                                                                                                        
+                                                      red27.setAttribute('visible', 'false');
                                                                                                                              
-                                                    washley.setAttribute('visible', 'true');
-                                                    washley.setAttribute('position', '180 -20 -200');
-                                                    washley.setAttribute('rotation', '0 -40 0');
-                                                                                                                             
-                                                    disland.setAttribute('visible', 'true');
-                                                    disland.setAttribute('position', '-20 -20 200');
-                                                    disland.setAttribute('rotation', '0 180 0');
+                                                      v.setAttribute('visible', 'true');
+                                                      v.setAttribute('position', '-300 20 200');
+                                                      v.setAttribute('rotation', '0 180 0');
+                                                      v.setAttribute('opacity','2');
+                                                      v.setAttribute('scale', '0.7 0.7 0.7');
                                                             });
                                                             
-                                                document.querySelector('#sg').addEventListener('click', function() {
-                                                sky.setAttribute('src', '360photo/sg.jpg');
-                                                this.setAttribute('visible', 'false');
-                                                                                                                
-                                                washley.setAttribute('visible', 'true');
-                                                washley.setAttribute('position', '180 -20 -200');
-                                                washley.setAttribute('rotation', '0 -40 0');
-                                                                                                                
-                                                disland.setAttribute('visible', 'true');
-                                                disland.setAttribute('position', '-20 -20 200');
-                                                disland.setAttribute('rotation', '0 180 0');
-                                                        });
+                                                
                                                         
-                                                document.querySelector('#swimming').addEventListener('click', function() {
-                                                sky.setAttribute('src', '360photo/swimming.jpg');
+                                                document.querySelector('#light').addEventListener('click', function() {
+                                                sky.setAttribute('src', '360photo/c.jpg');
                                                 this.setAttribute('visible', 'false');
                                                                                                        
                                                     washley.setAttribute('visible', 'true');
@@ -245,10 +356,28 @@
                                                         disland.setAttribute('position', '-20 -20 200');
                                                         disland.setAttribute('rotation', '0 180 0');
                                                                 });
-                                                                
-                                                           
+
+                                                document.querySelector('#ad').addEventListener('click', function() {
+                                                  sky.setAttribute('src', '360photo/ad.jpg');
+                                                  this.setAttribute('visible', 'false');
+                                                  
+                                                  park.setAttribute('visible', 'false');
+                                                  light.setAttribute('visible', 'false');
+                                                  sg.setAttribute('visible', 'false');
+                                                                                               
+                                                                                               
+                                                    v.setAttribute('visible', 'true');
+                                                    v.setAttribute('position', '-300 20 200');
+                                                    v.setAttribute('rotation', '0 180 0');
+                                                    v.setAttribute('opacity','2');
+                                                    v.setAttribute('scale', '0.7 0.7 0.7');
                                                         
+                                                
+
+                                                  });
+                                                  
+                                                  
 </script>
-    
+  
   </body>
 </html>
