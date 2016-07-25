@@ -81,7 +81,7 @@
         </a-image>
         
     
-    <a-image id="v" height="40" width="80" src="button2/v-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="ture">
+    <a-image id="v" height="40" width="80" src="button2/v-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
         <a-mouseenter opacity="1"></a-mouseenter>
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
@@ -146,6 +146,7 @@
                                                                                                 ed.setAttribute('visible', 'false');
                                                                                                 artcollege.setAttribute('visible', 'false');
                                                                                                 park.setAttribute('visible', 'false');
+                                                                                                english.setAttribute('visible', 'false');
                                                                                                 
                                                                                                 technology.setAttribute('visible', 'true');
                                                                                                 technology.setAttribute('position', '-4100 280 700');
@@ -171,7 +172,7 @@
                                                                                                       sg.setAttribute('visible', 'false');
                                                                                                       ed.setAttribute('visible', 'false');
                                                                                                       artcollege.setAttribute('visible', 'false');
- 
+                                                                                                      library.setAttribute('visible', 'false');
                                                                                                       
                                                                                                       artcollege.setAttribute('visible', 'true');
                                                                                                       artcollege.setAttribute('position', '-4100 280 700');
@@ -206,6 +207,9 @@
                                                                                                           ed.setAttribute('visible', 'false');
                                                                                                           artcollege.setAttribute('visible', 'false');
                                                                                                           park.setAttribute('visible', 'false');
+                                                                                                          business.setAttribute('visible', 'false');
+                                                                                                          library.setAttribute('visible', 'false');
+                                                                                                          english.setAttribute('visible', 'false');
                                                                                                           
                                                                                                           ed.setAttribute('visible', 'true');
                                                                                                           ed.setAttribute('position', '-4100 280 700');
@@ -227,14 +231,14 @@
                                                     sky.setAttribute('src', '360photo/artcollege.jpg');
                                                     this.setAttribute('visible', 'false');
                                                                                                                
-                                                           park.setAttribute('visible', 'false');
+                                    
                                                            artcollege.setAttribute('visible', 'false');
                                                            technology.setAttribute('visible', 'false');
                                                                                                            
                                                            park.setAttribute('visible', 'true');
                                                            park.setAttribute('position', '-4100 280 700');
                                                            park.setAttribute('rotation', '0 100 0');
-                                                           park.setAttribute('scale', '10 10 10');
+                                                           park.setAttribute('scale', '0.7 0.7 0.7');
                                                                                                            
                                                            red27.setAttribute('visible', 'true');
                                                            red27.setAttribute('position', '1000 -20 -100');
@@ -247,20 +251,22 @@
                                                     
                                                     document.querySelector('#red27').addEventListener('click', function() {
                                                             
-                                                           artcollege.setAttribute('visible', 'false');
-                                                           sg.setAttribute('visible', 'false');
+                                     
                                                                                                       
                                                            sky.setAttribute('src', '360photo/red.jpg');
                                                            this.setAttribute('visible', 'false');
                                                            business.setAttribute('visible', 'false');
                                                            red27.setAttribute('visible', 'false');
+                                                           artcollege.setAttribute('visible', 'false');
+                                                           park.setAttribute('visible', 'false');
+                                                                                                      
                                                                                                       
                                                            artcollege.setAttribute('visible', 'true');
                                                            artcollege.setAttribute('position', '370 70 500');
                                                            artcollege.setAttribute('rotation', '0 220 0');
                                                            artcollege.setAttribute('scale', '0.3 0.3 0.3');
                                                                                                            
-                                                           sg.setAttribute('visible', 'true');  //photo setting promble
+                                                           sg.setAttribute('visible', 'true');
                                                            sg.setAttribute('position', '-200 60 100');
                                                            sg.setAttribute('rotation', '0 120 0');
                                                            sg.setAttribute('scale', '0.7 0.7 0.7');
@@ -306,7 +312,8 @@
                                                         business.setAttribute('visible', 'false');
                                                         ground.setAttribute('visible', 'false');
                                                         swimming.setAttribute('visible', 'false');
-                                                        
+                                                        science.setAttribute('visible', 'false');
+                                                        english.setAttribute('visible', 'false');
                                                                                                       
                                                         park.setAttribute('visible', 'true');
                                                       
@@ -343,6 +350,7 @@
                                                                         swimming.setAttribute('visible', 'false');
                                                                         sg.setAttribute('visible', 'false');
                                                                         ed.setAttribute('visible', 'false');
+                                                                        v.setAttribute('visible', 'false');
                                                                                                             
                                                                        light.setAttribute('visible', 'true');
                                                                        light.setAttribute('position', '0 20 200');
@@ -387,8 +395,18 @@
                                                     this.setAttribute('visible', 'false');
                                                     
                                                     v.setAttribute('visible', 'false');
-                                                    
-                                                                                                       
+                                                                                                       ad.setAttribute('visible', 'false');
+                                                                                                       light.setAttribute('visible', 'false');
+                                                                                                       artcollege.setAttribute('visible', 'false');
+                                                                                                       red27.setAttribute('visible', 'false');
+                                                                                                       ground.setAttribute('visible', 'false');
+                                                                                                       swimming.setAttribute('visible', 'false');
+                                                                                                       sg.setAttribute('visible', 'false');
+                                                                                                       ed.setAttribute('visible', 'false');
+                                                                                                       artcollege.setAttribute('visible', 'false');
+                                                                                                       park.setAttribute('visible', 'false');
+                                                                                                       english.setAttribute('visible', 'false');
+                                                                                                       science.setAttribute('visible', 'false');
                                                     swimming.setAttribute('visible', 'true');
                                                     swimming.setAttribute('position', '0 20 200');
                                                     swimming.setAttribute('rotation', '0 180 0');
@@ -396,18 +414,7 @@
            
                                                         });
                                                         
-                                                        document.querySelector('#h').addEventListener('click', function() {
-                                                        sky.setAttribute('src', '360photo/h.jpg');
-                                                        this.setAttribute('visible', 'false');
-                                                                                                           
-                                                        washley.setAttribute('visible', 'true');
-                                                        washley.setAttribute('position', '180 -20 -200');
-                                                        washley.setAttribute('rotation', '0 -40 0');
-                                                                                                           
-                                                        disland.setAttribute('visible', 'true');
-                                                        disland.setAttribute('position', '-20 -20 200');
-                                                        disland.setAttribute('rotation', '0 180 0');
-                                                                    });
+ 
                                                                     
                                                     document.querySelector('#park').addEventListener('click', function() {
                                                     sky.setAttribute('src', '360photo/park.jpg');
@@ -463,6 +470,16 @@
                                                     science.setAttribute('visible', 'false');
                                                     swimming.setAttribute('visible', 'false');
                                                     ad.setAttribute('visible', 'false');
+                                                                                                  light.setAttribute('visible', 'false');
+                                                                                                  artcollege.setAttribute('visible', 'false');
+                                                                                                  red27.setAttribute('visible', 'false');
+                                                                                                  ground.setAttribute('visible', 'false');
+                                                                                                  swimming.setAttribute('visible', 'false');
+                                                                                                  sg.setAttribute('visible', 'false');
+                                                                                                  ed.setAttribute('visible', 'false');
+                                                                                                  artcollege.setAttribute('visible', 'false');
+                                                                                                  park.setAttribute('visible', 'false');
+                                                                                                  english.setAttribute('visible', 'false');
                                                                                                   
                                                 library.setAttribute('visible', 'true');
                                                 library.setAttribute('position', '180 -20 -200');
@@ -474,14 +491,15 @@
                                                       
                                                                                                   });
                                                                 
-                                            document.querySelector('#ad').addEventListener('click', function() {
+                                                document.querySelector('#ad').addEventListener('click', function() {
                                                   sky.setAttribute('src', '360photo/ad.jpg');
                                                   this.setAttribute('visible', 'false');
                                                   
                                                   park.setAttribute('visible', 'false');
                                                   light.setAttribute('visible', 'false');
                                                   sg.setAttribute('visible', 'false');
-                                                                                               
+ 
+                                                  ground.setAttribute('visible', 'false');
                                                                                                
                                                     v.setAttribute('visible', 'true');
                                                     v.setAttribute('position', '-300 20 200');
@@ -492,7 +510,11 @@
                                                     swimming.setAttribute('position', '0 20 200');
                                                     swimming.setAttribute('rotation', '0 180 0');
                                                     swimming.setAttribute('scale', '0.7 0.7 0.7');
-   
+                                                                                           
+                                                                                           science.setAttribute('visible', 'true');
+                                                                                           science.setAttribute('position', '200 20 200');
+                                                                                           science.setAttribute('rotation', '0 180 0');
+                                                                                           science.setAttribute('scale', '0.7 0.7 0.7');
                                                                                               
 
                                                   });
@@ -504,6 +526,8 @@
                                                   park.setAttribute('visible', 'false');
                                                   light.setAttribute('visible', 'false');
                                                   sg.setAttribute('visible', 'false');
+                                                  science.setAttribute('visible', 'false');
+                                                  english.setAttribute('visible', 'false');
 
                                                                                                        
                                                                                                        
@@ -536,11 +560,17 @@
                                                 light.setAttribute('visible', 'false');
                                                 sg.setAttribute('visible', 'false');
                                                 library.setAttribute('visible', 'false');
+                                                back.setAttribute('visible', 'false');
 
                                                technology.setAttribute('visible', 'true');
                                                technology.setAttribute('position', '50 20 200');
                                                technology.setAttribute('rotation', '0 180 0');
                                                technology.setAttribute('scale', '0.7 0.7 0.7');
+                                                                                               
+                                                                                               english.setAttribute('visible', 'true');
+                                                                                               english.setAttribute('position', '150 20 200');
+                                                                                               english.setAttribute('rotation', '0 180 0');
+                                                                                               english.setAttribute('scale', '0.7 0.7 0.7');
                                                                    });
                                                   
                                                   
