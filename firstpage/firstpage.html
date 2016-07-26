@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>360 Video</title>
-    <meta name="description" content="Animations: Generic Logo - A-Frame">
-    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+    <meta name="description" content="first page">
+    <script src="build.js"></script>
 </head>
 <body>
 <a-scene>
@@ -13,12 +13,21 @@
                  material="color: #404040"></a-mixin>
     </a-assets>
 
-    <a-camera fov="80" near="0.1" wasd-controls-enabled="false"></a-camera>
+<a-camera id="camera" look-controls wasd-controls>
+    <!-- <a-cursor color="#4CC3D9"></a-cursor> -->
+    <a-ring radius-outer="0.16" radius-inner="0.06"
+        position="0 0 -3"
+        material="color:#4CC3D9; shader: flat"
+        cursor="maxDistance: 30; fuse: true">
+        <a-animation begin="click" easing="ease-in" attribute="scale"
+            fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+        <a-animation begin="fusing" easing="ease-in" attribute="scale"
+            fill="forwards" from="0.8 0.8 0.8" to="0.5 0.5 0.5" dur="150"></a-animation>
+    </a-ring>
+</a-camera>
 
 
-
-    <!-- A generic logo made of animated elements -->
-    <a-entity id="logo" position="0 0.15 -10" scale="5 5 5">
+<a-entity id="logo" position="0 0.15 -10" scale="5 5 5">
         <a-entity id="box">
             <a-animation attribute="scale" from="0 0 0" to="1 1 1" begin="500" dur="500"
                          fill="both" easing="ease-out"></a-animation>
@@ -29,7 +38,11 @@
 
 
             <a-entity scale="0.08 0.08 0.08">
-                <a-image id="exit" src="pv.png" width="20" height="10" opacity="1" position="-0.5 0 0" rotation="0 -45 0">
+                
+                <a-image id="exit" src="pv.png" width="20" height="10" opacity="1" position="-0.5 0 0" rotation="0 -45 0" href="file:///Users/RYAN/Desktop/sd%20all%20page/index.html">
+                    <a-event name="mouseenter" target="#exit"  ></a-event>
+                    <a-event name="mouseleave" target="#exit"  ></a-event>
+                    
                 </a-image>
             </a-entity>
         </a-entity>
@@ -99,7 +112,7 @@
         <a-curvedimage id="p3" radius="5" theta-length="50" height="2.5" src="教育館.jpg" position="0 -2.75 3" rotation="0 -60 0" opacity="1" visible="true">
                     </a-curvedimage>
         
-        <!--　----------------------------------------------------------- -->
+       
                 <a-entity>
                     <a-curvedimage id="p4" radius="5" theta-length="50" height="2.5" src="文館斜坡.jpg" position="0 2.75 3" rotation="0 -115 0"  visible="true" scae=".9 .9 .9">
                     </a-curvedimage>
