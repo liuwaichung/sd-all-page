@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>360 Video</title>
+    <meta name="description" content="Animations: Generic Logo - A-Frame">
+    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+        <a-assets>
+        <a-mixin id="frame-edge" geometry="primitive: box; depth: 10; height: 0.1; width: 0.1"
+                 material="color: #404040"></a-mixin>
+    </a-assets>
+
+    <a-camera fov="80" near="0.1" wasd-controls-enabled="false"></a-camera>
+
+
+
+    <!-- A generic logo made of animated elements -->
+    <a-entity id="logo" position="0 0.15 -10" scale="5 5 5">
+        <a-entity id="box">
+            <a-animation attribute="scale" from="0 0 0" to="1 1 1" begin="500" dur="500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-animation attribute="position" from="0 -0.5 0" to="0 0 0" begin="500" dur="500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-animation attribute="rotation" from="0 -300 0" to="30 54 36" begin="500" dur="1200"
+                         fill="both" easing="ease-out"></a-animation>
+
+
+            <a-entity scale="0.08 0.08 0.08">
+                <a-image id="exit" src="pv.png" width="20" height="10" opacity="1" position="-0.5 0 0" rotation="0 -45 0">
+                </a-image>
+            </a-entity>
+        </a-entity>
+
+        <a-entity id="dots1" rotation="0 90 0">
+            <a-animation attribute="scale" from="1 0 1" to="1 2 1" begin="800" dur="1500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-cylinder position="0.5 2 0.5" radius="0.04" height="2" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+
+        </a-entity>
+
+        <a-entity id="dots1" rotation="0 0 0">
+            <a-animation attribute="scale" from="1 0 1" to="1 2 1" begin="800" dur="1500"
+                         fill="both" easing="ease-out"></a-animation>
+
+            <a-cylinder position="-0.5 -2 -0.5" radius="0.04" height="2" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+        </a-entity>
+
+        <a-entity id="dots1" rotation="0 0 -90">
+            <a-animation attribute="scale" from="1 0 1" to="1 2 1" begin="800" dur="1500"
+                         fill="both" easing="ease-out"></a-animation>
+            <a-cylinder position="0.5 2 -1" radius="0.04" height="2" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+            <a-cylinder position="-0.5 -2 -0.5" radius="0.04" height="2" color="#EF2D5E"
+                        open-ended="true" side="double">
+                <a-animation attribute="scale" from="1 1.25 1" to="1 0 1" begin="800" dur="750"
+                             fill="both" easing="ease-out"></a-animation>
+            </a-cylinder>
+        </a-entity>
+
+
+
+        <a-image id="con" src="logo.png" width="3" height="1.5" onmouseover="function() {
+
+        }" >
+            <a-animation attribute="scale" from="1 0 1" to="0.75 0.75 0.75" begin="1500"
+                         dur="200" fill="both" easing="ease-out"></a-animation>
+            <a-animation attribute="position" from="0 -3 0" to="0 -0.7 0" begin="1000"
+                         dur="1000" fill="both" easing="ease-out"></a-animation>
+        </a-image>
+
+
+
+
+        <a-entity>
+            <a-curvedimage id="p1" radius="5" theta-length="50" height="2.5" src="外語大樓.jpg" position="0 2.75 3" rotation="0 -60 0"  visible="true" scae=".9 .9 .9">
+                <a-mouseenter target="#glow1" opacity=".8"></a-mouseenter>
+                <a-mouseleave target="#glow1" opacity=".2"></a-mouseleave>
+
+            </a-curvedimage>
+
+            <a-curvedimage id="glow1" src="glow.png" rotation="0 -59.75 0" radius="5.1" theta-length="51" height="2.675" position="0 2.825 3" opacity=".2" >
+            </a-curvedimage>
+        </a-entity>
+
+        <a-curvedimage id="p2" radius="5" theta-length="50" height="2.5" src="工學大樓.jpg" position="0 0 3" rotation="0 -60 0" opacity="1" visible="true">
+            <a-mouseenter target="#glow2" opacity=".8"></a-mouseenter>
+            <a-mouseleave target="#glow2" opacity=".2"></a-mouseleave>
+
+        </a-curvedimage>
+
+        <a-curvedimage id="glow2" src="glow.png" rotation="0 -59.75 0" radius="5.1" theta-length="51" height="2.675" position="0 0 3" opacity=".2" >
+        </a-curvedimage>
+
+        <a-curvedimage id="p3" radius="5" theta-length="50" height="2.5" src="教育館.jpg" position="0 -2.75 3" rotation="0 -60 0" opacity="1" visible="true">
+            <a-mouseenter target="#glow3" opacity=".8"></a-mouseenter>
+            <a-mouseleave target="#glow3" opacity=".2"></a-mouseleave>
+
+        </a-curvedimage>
+        <a-curvedimage id="glow3" src="glow.png" rotation="0 -59.75 0" radius="5.1" theta-length="51" height="2.675" position="0 -2.825 3" opacity=".2" >
+        </a-curvedimage>
+        <!--　----------------------------------------------------------- -->
+                <a-entity>
+                    <a-curvedimage id="p4" radius="5" theta-length="50" height="2.5" src="文館斜坡.jpg" position="0 2.75 3" rotation="0 -115 0"  visible="true" scae=".9 .9 .9">
+                        <a-mouseenter target="#glow4" opacity=".8"></a-mouseenter>
+                        <a-mouseleave target="#glow4" opacity=".2"></a-mouseleave>
+
+                    </a-curvedimage>
+
+                    <a-curvedimage id="glow4" src="glow.png" rotation="0 -114.75 0" radius="5.1" theta-length="51" height="2.675" position="0 2.825 3" opacity=".2" >
+                    </a-curvedimage>
+                </a-entity>
+                <a-curvedimage id="p5" radius="5" theta-length="50" height="2.5" src="商管福園.jpg" position="0 0 3" rotation="0 -115 0" opacity="1" visible="true">
+                    <a-mouseenter target="#glow5" opacity=".8"></a-mouseenter>
+                    <a-mouseleave target="#glow5" opacity=".2"></a-mouseleave>
+
+                </a-curvedimage>
+                <a-curvedimage id="glow5" src="glow.png" rotation="0 -114.75 0" radius="5.1" theta-length="51" height="2.675" position="0 0 3" opacity=".2" >
+                </a-curvedimage>
+
+
+                <a-curvedimage id="p6" radius="5" theta-length="50" height="2.5" src="黑天鵝.jpg" position="0 -2.75 3" rotation="0 -115 0" opacity="1" visible="true">
+                    <a-mouseenter target="#glow6" opacity=".8"></a-mouseenter>
+                    <a-mouseleave target="#glow6" opacity=".2"></a-mouseleave>
+
+                </a-curvedimage>
+                <a-curvedimage id="glow6" src="glow.png" rotation="0 -114.75 0" radius="5.1" theta-length="51" height="2.675" position="0 -2.825 3" opacity=".2" >
+                </a-curvedimage>
+
+        <!--　----------------------------------------------------------- -->
+
+                <a-entity>
+                    <a-curvedimage id="p7" radius="5" theta-length="50" height="2.5" src="蛋捲廣場.jpg" position="0 2.75 3" rotation="0 -170 0"  visible="true" scae=".9 .9 .9">
+                        <a-mouseenter target="#glow7" opacity=".8"></a-mouseenter>
+                        <a-mouseleave target="#glow7" opacity=".2"></a-mouseleave>
+
+                    </a-curvedimage>
+
+                    <a-curvedimage id="glow7" src="glow.png" rotation="0 -169.5 0" radius="5.1" theta-length="51" height="2.675" position="0 2.825 3" opacity=".2" >
+                    </a-curvedimage>
+                </a-entity>
+
+
+
+                <a-curvedimage id="p8" radius="5" theta-length="50" height="2.5" src="化學館.jpg" position="0 0 3" rotation="0 -170 0" opacity="1" visible="true">
+                    <a-mouseenter target="#glow8" opacity=".8"></a-mouseenter>
+                    <a-mouseleave target="#glow8" opacity=".2"></a-mouseleave>
+
+                </a-curvedimage>
+                <a-curvedimage id="glow8" src="glow.png" rotation="0 -169.5 0" radius="5.1" theta-length="51" height="2.675" position="0 0 3" opacity=".2" >
+                </a-curvedimage>
+
+
+                <a-curvedimage id="p9" radius="5" theta-length="50" height="2.5" src="宮燈教室.jpg" position="0 -2.75 3" rotation="0 -170 0" opacity="1" visible="true">
+                    <a-mouseenter target="#glow9" opacity=".8"></a-mouseenter>
+                    <a-mouseleave target="#glow9" opacity=".2"></a-mouseleave>
+
+                </a-curvedimage>
+                <a-curvedimage id="glow9" src="glow.png" rotation="0 -169.5 0" radius="5.1" theta-length="51" height="2.675" position="0 -2.825 3" opacity=".2" >
+                </a-curvedimage>
+
+
+        <!--　----------------------------------------------------------- -->
+
+                <a-entity>
+                    <a-curvedimage id="p10" radius="5" theta-length="50" height="2.5" src="操場.jpg" position="0 2.75 3" rotation="0 -225 0"  visible="true" scae=".9 .9 .9">
+                        <a-mouseenter target="#glow10" opacity=".8"></a-mouseenter>
+                        <a-mouseleave target="#glow10" opacity=".2"></a-mouseleave>
+
+                    </a-curvedimage>
+
+                    <a-curvedimage id="glow10" src="glow.png" rotation="0 -224.5 0" radius="5.1" theta-length="51" height="2.675" position="0 2.825 3" opacity=".2" >
+                    </a-curvedimage>
+                </a-entity>
+
+
+                <a-curvedimage id="p11" radius="5" theta-length="50" height="2.5" src="科學館.jpg" position="0 0 3" rotation="0 -225 0" opacity="1" visible="true">
+                    <a-mouseenter target="#glow11" opacity=".8"></a-mouseenter>
+                    <a-mouseleave target="#glow11" opacity=".2"></a-mouseleave>
+
+                </a-curvedimage>
+                <a-curvedimage id="glow11" src="glow.png" rotation="0 -224.5 0" radius="5.1" theta-length="51" height="2.675" position="0 0 3" opacity=".2" >
+                </a-curvedimage>
+
+
+
+                <a-curvedimage id="p12" radius="5" theta-length="50" height="2.5" src="游泳館.jpg" position="0 -2.75 3" rotation="0 -225 0" opacity="1" visible="true">
+                    <a-mouseenter target="#glow12" opacity=".8"></a-mouseenter>
+                    <a-mouseleave target="#glow12" opacity=".2"></a-mouseleave>
+
+                </a-curvedimage>
+                <a-curvedimage id="glow12" src="glow.png" rotation="0 -224.5 0" radius="5.1" theta-length="51" height="2.675" position="0 -2.825 3" opacity=".2" >
+                </a-curvedimage>
+
+
+
+
+
+            </a-entity>
+
+            <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+            <a-light type="ambient" color="#fff"></a-light>
+
+
+        </a-scene>
+
+        </body>
+        </html>
