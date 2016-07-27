@@ -14,13 +14,16 @@
              <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 10000; timeout: 1000"></a-entity>             
            
         </a-entity>
+
+         <a-sky id="sky" src="360photo/business.jpg" rotation="0 -60 0" radius="5000" color="#fff"></a-sky>
         
+
         <a-image id="downtown" src="button2/bs.png" radius="5.7" theta-length="35" height=".85" position="100 -10 200" scale="50 50 50" opacity=".8">
           <a-animation attribute="rotation" from="0 1.5 0" to="0 -358.5 0" begin="0" dur="10000" repeat="infinite" easing="linear"></a-animation> 
            </a-image>
 
-        <a-sky id="sky" src="360photo/business.jpg" rotation="0 -60 0" radius="5000" color="#fff"></a-sky>
-        
+
+
         <a-image id="business" height="40" width="100" src="button2/business-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
             <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
@@ -98,7 +101,7 @@
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
     
-    <a-image id="back" height="40" width="100" src="button2/back-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="ture">
+    <a-image id="back" height="40" width="100" src="button2/back-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="true">
         <a-mouseenter opacity="4"></a-mouseenter>
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
@@ -245,6 +248,8 @@
   <script>
       var sky = document.querySelector('#sky');
       
+
+      
       var business= document.querySelector('#business');
       var technology = document.querySelector('#technology');
       var artcollege = document.querySelector('#artcollege');
@@ -261,6 +266,7 @@
       var v = document.querySelector('#v');
       var ed = document.querySelector('#ed');
       var back = document.querySelector('#back');
+      
 
       var hover1 = document.querySelector('#hover-bs');
       var label1= document.querySelector('#label-bs');
@@ -769,6 +775,7 @@
                                                                                                english.setAttribute('scale', '1.3 1.3 1.3');
                                                                    });
                                                   
+
                                                   
                                                   
 </script>
