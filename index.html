@@ -10,99 +10,237 @@
   <body>
     <a-scene>
         <a-entity camera look-controls="enabled: true" wasd-controls="enabled: false">
-             <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 10000; timeout: 1000"></a-entity>
-             
+             <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 10000; timeout: 1000"></a-entity>             
            
         </a-entity>
         
-        
+        <a-image id="downtown" src="button2/bs.png" radius="5.7" theta-length="35" height=".85" position="100 -10 200" scale="50 50 50" opacity=".8">
+          <a-animation attribute="rotation" from="0 1.5 0" to="0 -358.5 0" begin="0" dur="10000" repeat="infinite" easing="linear"></a-animation> 
+           </a-image>
+
         <a-sky id="sky" src="360photo/business.jpg" rotation="0 -60 0" radius="5000" color="#fff"></a-sky>
         
         <a-image id="business" height="40" width="100" src="button2/business-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         <a-image id="ed" height="40" width="100" src="button2/ed-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
        
         <a-image id="technology" height="40" width="100" src="button2/technology-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         <a-image id="artcollege" height="200" width="600" src="button2/artcollege-button.png" position="-2200 -20 500" rotation="0 90 0" opacity="2" visible="true">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         
         <a-image id="park" height="200" width="600" src="button2/park-button.png" position="-200 90 1600" rotation="0 180 0" opacity="2" visible="true">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         <a-image id="red27" height="20" width="60" src="button2/red27-button.png" position="-2200 -20 500" rotation="0 90 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         <a-image id="library" height="40" width="80" src="button2/library-button.png" position="-150 70 200" rotation="0 200 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         <a-image id="english" height="40" width="80" src="button2/english-button.png" position="-50 70 200" rotation="0 200 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         <a-image id="ground" height="40" width="80" src="button2/ground-button.png" position="-10 70 200" rotation="0 200 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
 
         <a-image id="science" height="40" width="80" src="button2/science-button.png" position="40 70 200" rotation="0 200 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
         <a-image id="sg" height="40" width="80" src="button2/5tiger-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
-            <a-mouseenter opacity="1"></a-mouseenter>
+            <a-mouseenter opacity="4"></a-mouseenter>
             <a-mouseleave opacity="0.5"></a-mouseleave>
         </a-image>
         
     
     <a-image id="v" height="40" width="80" src="button2/v-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
-        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseenter opacity="4"></a-mouseenter>
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
     
     <a-image id="ad" height="40" width="80" src="button2/ad-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
-        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseenter opacity="4"></a-mouseenter>
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
     
     <a-image id="light" height="40" width="80" src="button2/light-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
-        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseenter opacity="4"></a-mouseenter>
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
     
     <a-image id="swimming" height="40" width="80" src="button2/swimming-button.png" position="80 70 200" rotation="0 200 0" opacity="2" visible="false">
-        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseenter opacity="4"></a-mouseenter>
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
     
     <a-image id="back" height="40" width="100" src="button2/back-button.png" position="180 10 -200" rotation="0 -40 0" opacity="2" visible="ture">
-        <a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseenter opacity="4"></a-mouseenter>
         <a-mouseleave opacity="0.5"></a-mouseleave>
     </a-image>
 
+
+        <a-mixin
+
+                id="hover"
+                geometry="primitive: plane; width: 100; height: 100;"
+                material="color: #FFFFFF; opacity:0">
+        </a-mixin>
+  
+
+        <a-entity
+                id="hover-bs"
+                target="#label-bs"
+                mixin="hover"
+                position="50  170 -280"
+                rotation="0 40 1"
+                geometry="width: 500; height:400;"
+                visible="true">
+        </a-entity>
+        <a-image
+                id="label-bs"
+                scale="15 5 2"
+                src="button2/business-show.png"
+                position="-50  20 -20"
+                rotation="0 50  0"
+                visible="true">
+        </a-image>
+       
+
+<a-entity id="hover-lb" target="#label-lb" mixin="hover" position="-20  3 -5" rotation="0 40 -3" scale="0 0 0" visible="true">
+        </a-entity>
+
+        <a-image id="label-lb" src="button2/library-show.png" position="-50 10 10" scale="0 0 0" rotation="0 45  0" visible="true">
+        </a-image>
+
+
+<a-entity id="hover-star" target="#label-star" mixin="hover" position="7  5 -7" rotation="0 -30 0" scale="0 0 0" visible="true">
+        </a-entity>
+
+        <a-image id="label-star" src="button2/prak-show.png" position="1  1.5 -6" scale="0 0 0" rotation="10 -10  0" visible="true">
+        </a-image>
+
+          <a-entity id="hover-5t" target="#label-5t" mixin="hover" position="-15 8 -6.5" rotation="0 50 -3" scale="0 0 0" visible="true">
+        </a-entity>
+
+        <a-image id="label-5t" src="button2/sg-show.png" position="-10 15 -8" scale="0 0 0" rotation="0 80 0" visible="true">
+        </a-image>
     </a-scene>
   </body>
-  
+
+
+  <script type="text/javascript">
+      var hovers = [];
+      var labels = [];
+      hovers.push(document.querySelector('#hover-bs'));
+      labels.push(document.querySelector('#label-bs'));
+
+
+       hovers.push(document.querySelector('#hover-lb'));
+      labels.push(document.querySelector('#label-lb'));
+
+        hovers.push(document.querySelector('#hover-star'));
+      labels.push(document.querySelector('#label-star'));
+
+      hovers.push(document.querySelector('#hover-5t'));
+      labels.push(document.querySelector('#label-5t'));
+      function setState(subject, state, keep) {
+          var iterator;
+
+          // determine what we're iterating over
+          if (subject === 'hovers') {
+              iterator = hovers;
+          }
+          if (subject === 'labels') {
+              iterator = labels;
+          }
+          if (subject === 'hotspots') {
+              iterator = hoversEgg;
+          }
+          if (subject === 'eggs') {
+              iterator = labelsEgg;
+          }
+          // console.log('iterator', iterator);
+
+          // determine which state
+          if (state == 'visible') {
+              // set all hovers visible
+              iterator.forEach(function(iterate) {
+                  iterate.setAttribute('visible', true);
+              })
+          }
+          if (state == 'invisible') {
+              // set all hovers invisible
+              iterator.forEach(function(iterate) {
+                  iterate.setAttribute('visible', false);
+              })
+          }
+
+          // see if we have one to keep visible
+          if (keep) {
+              keep.setAttribute('visible', true);
+          }
+      }
+      hovers.forEach(function(hover) {
+          hover.addEventListener('mouseenter', function() {
+              // set state of all hovers to invisible except one
+              setState('hovers', 'invisible', hover);
+
+              // show corresponding label
+              var hoverLabel = hover.getAttribute('target');
+              // console.log('hoverlabel', hoverLabel);
+              document.querySelector(hoverLabel).setAttribute('visible', true);
+          })
+
+          hover.addEventListener('mouseleave', function() {
+              // set state of all hovers to visible
+              setState('hovers', 'visible');
+
+              // set state of all labels to invisible
+              setState('labels', 'invisible');
+          })
+
+          hover.addEventListener('click', function() {
+              var egg = hover.getAttribute('egg-target');
+              var is_visible = document.querySelector(egg).getAttribute('visible');
+              if (egg !== null && is_visible === false) {
+                  document.querySelector(egg).setAttribute('visible', true);
+              } else {
+                  document.querySelector(egg).setAttribute('visible', false);
+              }
+          })
+
+      });
+      labelsEgg.forEach(function(egg) {
+          egg.addEventListener('click', function() {
+              this.setAttribute('visible', false);
+          })
+      });
+        
+  </script>
   <script>
       var sky = document.querySelector('#sky');
       
@@ -122,11 +260,24 @@
       var v = document.querySelector('#v');
       var ed = document.querySelector('#ed');
       var back = document.querySelector('#back');
-      
+
+      var hover1 = document.querySelector('#hover-bs');
+      var label1= document.querySelector('#label-bs');
+                                               
+        var hover2 = document.querySelector('#hover-lb');
+      var label2= document.querySelector('#label-lb');
+                                 
+         var hover3 = document.querySelector('#hover-star');
+      var label3= document.querySelector('#label-star');   
+
+       var hover4= document.querySelector('#hover-5t');
+      var label4= document.querySelector('#label-5t');                                    
                                                document.querySelector('#back').addEventListener('click', function() {
                                                            sky.setAttribute('src', '360photo/back.jpg');
                                                            this.setAttribute('visible', 'false');
-                                                                                                
+                                                   
+                                                         hover1.setAttribute('visible', 'false');
+                                                         label1.setAttribute('opacity', 'false');
                                                                                                 ad.setAttribute('visible', 'false');
                                                                                                 light.setAttribute('visible', 'false');
                                                                                                 artcollege.setAttribute('visible', 'false');
@@ -181,6 +332,9 @@
                                                                                                       park.setAttribute('position', '-200 90 1600');
                                                                                                       park.setAttribute('rotation', '0 180 0');
                                                                                                       park.setAttribute('scale', '0.7 0.7 0.7');
+
+                                                                  hover3.setAttribute('scale', '0 0 0');
+                                                                  label3.setAttribute('scale', '0 0 0');
                                                              });
 
       
@@ -212,7 +366,8 @@
                                                                                                           back.setAttribute('position', '-3200 20 3000');
                                                                                                           back.setAttribute('rotation', '0 100 0');
                                                                                                           back.setAttribute('scale', '12.3 12.3 12.3');
-                                                                                                          
+                                                                 hover3.setAttribute('scale', '0 0 0');
+                                                                  label3.setAttribute('scale', '0 0 0');                  
 
                                                            });
                                                            
@@ -222,8 +377,9 @@
                                                   
                                                     sky.setAttribute('src', '360photo/artcollege.jpg');
                                                     this.setAttribute('visible', 'false');
-                                                                                                               
-                                    
+
+                                                        hover1.setAttribute('visible', 'false');
+                                                        label1.setAttribute('visible', 'false');
                                                            artcollege.setAttribute('visible', 'false');
                                                            technology.setAttribute('visible', 'false');
                                                         back.setAttribute('visible', 'false');
@@ -238,7 +394,8 @@
                                                            red27.setAttribute('rotation', '0 -100 0');
                                                            red27.setAttribute('scale', '4.5 4.5 4.5');
                                                            
-                                                                                                           
+                                                            hover4.setAttribute('scale', '0 0 0');
+                                                         label4.setAttribute('scale', '0 0 0');                                                 
                                                                                                            
                                                     });
                                                     
@@ -264,6 +421,14 @@
                                                            sg.setAttribute('rotation', '0 120 0');
                                                            sg.setAttribute('scale', '0.7 0.7 0.7');
                                                            sg.setAttribute('opacity','2');
+
+                                                            hover4.setAttribute('scale', '0.2 0.2 0.2');
+                                                          label4.setAttribute('scale', '20 10 0');                                             
+
+                                                         hover1.setAttribute('scale', '0 0 0');
+                                                         label1.setAttribute('scale', '0 0 0');          
+                                                       hover3.setAttribute('scale', '0 0 0');
+                                                         label3.setAttribute('scale', '0 0 0');  
                                                     });
                                                     
                                                     
@@ -293,8 +458,11 @@
                                                         science.setAttribute('rotation', '0 90 0');
                                                         science.setAttribute('opacity','2');
                                                         science.setAttribute('scale', '0.7 0.7 0.7');
-                                                                                                    
-                                                        });
+
+                                                         hover4.setAttribute('scale', '0 0 0');
+                                                         label4.setAttribute('scale', '0 0 0');    
+                                                         
+                                                     });
                                                         
                                                         document.querySelector('#v').addEventListener('click', function() {
                                                         sky.setAttribute('src', '360photo/v.jpg');
@@ -364,6 +532,15 @@
                                                                        english.setAttribute('position', '-300 20 200');
                                                                        english.setAttribute('rotation', '0 110 0');
                                                                        english.setAttribute('scale', '1 1 1');
+
+                                                       hover2.setAttribute('scale', '0.2 0.2 0.2');
+                                                         label2.setAttribute('scale', '20 10 0');
+
+                                                                    hover1.setAttribute('scale', '0 0 0');
+                                                                  label1.setAttribute('scale', '0 0 0');
+
+                                                                  hover3.setAttribute('scale', '0 0 0');
+                                                                  label3.setAttribute('scale', '0 0 0');
                                                                     });
                                                                     
                                                         document.querySelector('#english').addEventListener('click', function() {
@@ -391,6 +568,8 @@
                                                            library.setAttribute('rotation', '0 230 0');
                                                            library.setAttribute('scale', '1.3 1.3 1.3');
 
+                                                            hover2.setAttribute('scale', '0 0 0');
+                                                         label2.setAttribute('scale', '0 0 0');
                                                                 });
                                                                 
                                                     document.querySelector('#ground').addEventListener('click', function() {
@@ -422,7 +601,10 @@
                                                     document.querySelector('#park').addEventListener('click', function() {
                                                     sky.setAttribute('src', '360photo/park.jpg');
                                                     this.setAttribute('visible', 'false');
-                                                      
+
+                                                        hover1.setAttribute('scale', '0 0 0');
+                                                         label1.setAttribute('scale', '0 0 0'); 
+                                                    
                                                      ad.setAttribute('visible', 'false');
                                                      light.setAttribute('visible', 'false');
                                                      artcollege.setAttribute('visible', 'false');
@@ -448,6 +630,10 @@
                                                     technology.setAttribute('position', '-100 20 -300');
                                                     technology.setAttribute('rotation', '0 30 0');
                                                     technology.setAttribute('scale', '0.7 0.7 0.7');
+
+                                                    hover3.setAttribute('scale', '0.1 0.1 0');
+                                                         label3.setAttribute('scale', '2 2 2');
+
 
                                                                                                      });
                                                                             
@@ -495,6 +681,9 @@
                                                 v.setAttribute('position', '-650 20 -100');
                                                 v.setAttribute('rotation', '0 -280 0');
                                                 v.setAttribute('scale', '1.6 1.6 1.6');
+
+                                                hover2.setAttribute('scale', '0 0 0');
+                                                         label2.setAttribute('scale', '0 0 0');
                                                                                                   });
                                                                 
                                                 document.querySelector('#ad').addEventListener('click', function() {
